@@ -54,6 +54,7 @@ namespace CollisionDetectionDemo
         {
             SetState(newPosition, Velocity);
         }
+
         public void SetVelocity(Vector2 newVelocity)
         {
             SetState(Position, newVelocity);
