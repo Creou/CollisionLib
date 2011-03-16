@@ -11,8 +11,9 @@ namespace CollisionLib
         Vector2 Position { get; }
         Vector2 Velocity { get; }
 
-        void SetState(Vector2 position, Vector2 velocity);
-        void SetPosition(Vector2 position);
+        void SetState(Vector2 newPosition, Vector2 newVelocity);
+        void SetPosition(Vector2 newPosition);
+        void SetVelocity(Vector2 newVelocity);
 
         float Mass { get; }
     }

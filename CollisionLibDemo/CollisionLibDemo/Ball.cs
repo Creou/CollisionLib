@@ -44,15 +44,19 @@ namespace CollisionDetectionDemo
             _friction = 0.001f;
         }
 
-        public void SetState(Vector2 position, Vector2 velocity)
+        public void SetState(Vector2 newPosition, Vector2 newVelocity)
         {
-            _position = position;
-            _velocity = velocity;
+            _position = newPosition;
+            _velocity = newVelocity;
         }
 
-        public void SetPosition(Vector2 position)
+        public void SetPosition(Vector2 newPosition)
         {
-            _position = position;
+            SetState(newPosition, Velocity);
+        }
+        public void SetVelocity(Vector2 newVelocity)
+        {
+            SetState(Position, newVelocity);
         }
 
         protected override void LoadContent()
