@@ -7,7 +7,6 @@ using Microsoft.Xna.Framework;
 
 namespace CollisionLib
 {   
-
     public class CollisionManager
     {
         IEnumerable<CollilisionPair> _collisionPairs;
@@ -18,6 +17,7 @@ namespace CollisionLib
             // Create the colliders.
             _colliders = new Collection<ICollider>();
             _colliders.Add(new CircleToCircleCollider(game));
+            _colliders.Add(new CircleAxisAlignedRectangleCollider(game));
 
             // Search for all the pairs of collidable objects.
             var allCollisionPairs = new Collection<CollilisionPair>();

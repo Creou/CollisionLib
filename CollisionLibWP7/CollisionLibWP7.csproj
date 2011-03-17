@@ -78,6 +78,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\CollisionLib\BaseCollidableObject.cs">
+      <Link>BaseCollidableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\CollisionLib\CircleAxisAlignedRectangleCollider.cs">
+      <Link>CircleAxisAlignedRectangleCollider.cs</Link>
+    </Compile>
     <Compile Include="..\CollisionLib\CircleToCircleCollider.cs">
       <Link>CircleToCircleCollider.cs</Link>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <Compile Include="..\CollisionLib\DistinctPairDetector.cs">
       <Link>DistinctPairDetector.cs</Link>
+    </Compile>
+    <Compile Include="..\CollisionLib\IColliadableAxisAlignedRectangle.cs">
+      <Link>IColliadableAxisAlignedRectangle.cs</Link>
     </Compile>
     <Compile Include="..\CollisionLib\ICollidable.cs">
       <Link>ICollidable.cs</Link>
