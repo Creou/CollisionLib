@@ -25,6 +25,7 @@ namespace CollisionDetectionDemo
 
         private Ball _ball1;
         private Ball _ball2;
+        private AxisAlignedRectangle _rect1;
 
         public CollisionDemo()
         {
@@ -38,10 +39,12 @@ namespace CollisionDetectionDemo
 
             _ball1 = new Ball(this, "BallR", 2, 1);
             _ball2 = new Ball(this, "BallB", 2, 1);
+            _rect1 = new AxisAlignedRectangle(this, "RectB", 2, 1);
             Reset();
 
             this.Components.Add(_ball1);
-            this.Components.Add(_ball2);
+            //this.Components.Add(_ball2);
+            this.Components.Add(_rect1);
 
             IEnumerable<ICollidable> collidableObjects = this.Components.OfType<ICollidable>();
 
@@ -52,6 +55,7 @@ namespace CollisionDetectionDemo
         {
             _ball1.SetState(new Vector2((int)(this._graphics.PreferredBackBufferWidth / 3.4), (int)(this._graphics.PreferredBackBufferHeight / 5)), new Vector2(this._graphics.PreferredBackBufferWidth / 8400f, this._graphics.PreferredBackBufferHeight / 5250f)); // new Vector2(0.2f, 0.2f));
             _ball2.SetState(new Vector2((int)(this._graphics.PreferredBackBufferWidth / 1.8), (int)(this._graphics.PreferredBackBufferHeight / 1.8)), new Vector2(this._graphics.PreferredBackBufferWidth / -8400f, this._graphics.PreferredBackBufferHeight / -10500f)); // new Vector2(-0.2f, -0.1f));
+            _rect1.SetState(new Vector2((int)(this._graphics.PreferredBackBufferWidth / 1.8), (int)(this._graphics.PreferredBackBufferHeight / 1.8)), new Vector2(this._graphics.PreferredBackBufferWidth / -8400f, this._graphics.PreferredBackBufferHeight / -10500f)); // new Vector2(-0.2f, -0.1f));
         }
 
         protected override void Initialize()
