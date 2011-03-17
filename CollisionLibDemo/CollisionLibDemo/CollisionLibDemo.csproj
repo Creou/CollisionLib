@@ -111,6 +111,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="CollisionDemo.cs" />
+    <Compile Include="Square.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
@@ -121,8 +122,9 @@
       <Project>{6767470D-3C38-4194-8831-33C3ACE2FF5E}</Project>
       <Name>CollisionLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CollisionDetectionDemoContent\CollisionDetectionDemoContent.contentproj">
-      <Name>CollisionDetectionDemoContent</Name>
+    <ProjectReference Include="..\CollisionLibDemoContent\CollisionLibDemoContent.contentproj">
+      <Project>{8A4CC189-BA3A-4316-A07C-736789FAC9AB}</Project>
+      <Name>CollisionLibDemoContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
   </ItemGroup>

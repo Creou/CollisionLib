@@ -92,10 +92,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseCollidableObject.cs" />
     <Compile Include="CircleToCircleCollider.cs" />
     <Compile Include="CollilisionPair.cs" />
     <Compile Include="CollisionManager.cs" />
     <Compile Include="DistinctPairDetector.cs" />
+    <Compile Include="IColliadableAxisAlignedRectangle.cs" />
     <Compile Include="ICollidable.cs" />
     <Compile Include="ICollidableCircle.cs" />
     <Compile Include="ICollider.cs" />
