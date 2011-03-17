@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseCollidableObject.cs" />
+    <Compile Include="CircleAxisAlignedRectangleCollider.cs" />
     <Compile Include="CircleToCircleCollider.cs" />
     <Compile Include="CollilisionPair.cs" />
     <Compile Include="CollisionManager.cs" />
