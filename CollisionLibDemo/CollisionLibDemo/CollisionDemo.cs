@@ -49,6 +49,9 @@ namespace CollisionDetectionDemo
             IEnumerable<ICollidable> collidableObjects = this.Components.OfType<ICollidable>();
 
             _collisionManager = new CollisionManager(this, collidableObjects);
+
+            this._graphics.PreferredBackBufferWidth = (int)10;
+            this._graphics.PreferredBackBufferHeight = (int)10;
         }
 
         public void Reset()
@@ -80,7 +83,7 @@ namespace CollisionDetectionDemo
                 this.Exit();
             }
 
-            // Allow the user to press 'R' to reset the collsion demo.
+            // Allow the user to press 'R' to reset the collision demo.
             if (Keyboard.GetState().IsKeyDown(Keys.R))
             {
                 Reset();
