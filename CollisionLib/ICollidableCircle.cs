@@ -9,5 +9,6 @@ namespace CollisionLib
     public interface ICollidableCircle : ICollidable
     {
         float Diameter { get; }
+        float Radius { get; }
     }
 }

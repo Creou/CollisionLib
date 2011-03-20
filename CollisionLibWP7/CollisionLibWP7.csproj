@@ -81,6 +81,9 @@
     <Compile Include="..\CollisionLib\BaseCollidableObject.cs">
       <Link>BaseCollidableObject.cs</Link>
     </Compile>
+    <Compile Include="..\CollisionLib\BaseCollider.cs">
+      <Link>BaseCollider.cs</Link>
+    </Compile>
     <Compile Include="..\CollisionLib\CircleAxisAlignedRectangleCollider.cs">
       <Link>CircleAxisAlignedRectangleCollider.cs</Link>
     </Compile>

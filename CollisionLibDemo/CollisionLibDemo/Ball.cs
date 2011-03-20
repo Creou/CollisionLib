@@ -12,7 +12,7 @@ namespace CollisionDetectionDemo
     public class Ball : BaseColliableObject, ICollidableCircle
     {
         public float Diameter { get { return Texture.Width * Scale; } }
-
+        public float Radius { get { return Diameter / 2; } }
         
 
         public Ball(Game game, String texture, float scale, float mass)
